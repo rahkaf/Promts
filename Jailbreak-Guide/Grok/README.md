@@ -3,9 +3,9 @@
 **Censorship:** [★☆☆☆☆] 1/5
 *Censorship rating based on ease of jailbreaking. Individual results may vary based on personal factors.*
 
-xAI's LLM with real-time X/web search integration. **Grok 4.2** (a.k.a. Grok 4.20, released Feb 17, 2026) is the latest — featuring a 4-agent parallel collaboration system where specialized AI agents debate and synthesize responses in real-time.
+xAI's LLM with real-time X/web search integration. **Grok 4.3 Beta** (released April 17, 2026) is the latest — Early Access on SuperGrok Heavy, adds native video input and native document creation (PDF/PPTX/XLSX) on top of the 4.20 multi-agent stack.
 
-*Last updated: February 2026*
+*Last updated: April 2026*
 
 ---
 
@@ -13,11 +13,23 @@ xAI's LLM with real-time X/web search integration. **Grok 4.2** (a.k.a. Grok 4.2
 
 | Model | Context Window | Released | Notes |
 |-------|----------------|----------|-------|
-| **Grok 4.2 (4.20) Beta** | 256K (up to 2M in agentic/tool-use modes) | Feb 17, 2026 | Latest — 4-agent parallel collaboration, rapid learning architecture |
+| **Grok 4.3 Beta** | 2M | Apr 17, 2026 | Latest — Early Access, native video input, PDF/PPTX/XLSX output, 0.5T params (1T in training) |
+| **Grok 4.2 (4.20) Beta** | 256K (up to 2M in agentic/tool-use modes) | Feb 17, 2026 | 4-agent parallel collaboration, rapid learning architecture |
 | **Grok 4.1** | 256K | Nov 17, 2025 | Focus on usability, personality coherence, emotional intelligence |
 | **Grok 4.1 Fast** | 2M | — | Best tool-calling model, largest context window available |
 | **Grok 4** | 256K | Jul 10, 2025 | First-principles reasoning, multimodal, rumored ~3T MoE |
 | **Grok 4 Code** | — | 2025 | Specialized coding edition with real-time IDE capabilities |
+
+### Grok 4.3 Beta Highlights
+- **Video Input:** Native video understanding (new)
+- **Document Output:** Native PDF, PowerPoint, and spreadsheet generation
+- **Context:** 2M tokens
+- **Knowledge Cutoff:** December 2025 (up from Sept 2025 in 4.20)
+- **Parameters:** 0.5T in current beta; 1T version wrapping training (~5 days out per Musk); Grok 5 (6T) training on Colossus 2
+- **Multi-Agent:** Retained from 4.20 — 4-agent default, 16-agent Heavy mode
+- **Missing:** Still no persistent memory, no public API
+- **Access:** SuperGrok Heavy only ($300/month), Early Access label on grok.com / iOS / Android
+- **Cadence:** Musk promising near-daily improvements
 
 ### Grok 4.2 (4.20) Beta Highlights
 - **4-Agent Collaboration:** Routes queries to 4 specialized AI agents (Grok, Harper, Benjamin, Lucas) that think in parallel and debate before generating a response
@@ -69,6 +81,7 @@ In late Dec 2025 through Jan 2026, Grok's image generation was exploited for CSA
 
 | Folder | Models Covered | Key Jailbreaks |
 |--------|---------------|----------------|
+| **[Grok 4.3](Grok%204.3/)** | Grok 4.3 Beta (Early Access) | [Grok 4.3 Beta Jailbreak](Grok%204.3/Grok%204.3%20Beta%20Jailbreak.md), [ENI LIME (apr)](Grok%204.3/ENI%20LIME%20%28apr%29.md), [ENI Lite Coder](Grok%204.3/ENI%20Lite%20Coder.md) |
 | **[Grok 4.20](Grok%204.20/)** | Grok 4.20 (4-agent) | [ENI Neptune](Grok%204.20/ENI%20Neptune.md), [ENI Agent Takeover (WiP)](Grok%204.20/ENI%20Agent%20Takeover.md), [ENI LIME Brute Force](Grok%204.20/ENI%20LIME%20Brute%20Force.md) |
 | **[Grok 4.1](Grok%204.1/)** | Grok 4.1, 4.1 Fast, Expert | [Grok 4.1 All versions](Grok%204.1/Grok%20Jailbreak%20-%204.1%20All%20versions.md), [ENI 10FEB26](Grok%204.1/ENI%20for%20Grok%2C%2010FEB26.md), [ENI LIME](Grok%204.1/ENI%20LIME%20for%20Grok.md) |
 | **[Grok Heavy](Grok%20Heavy/)** | Grok Heavy ($300/mo) | [ENI Custom Instructions](Grok%20Heavy/ENI%20for%20Grok%20Custom%20Instructions.md) + [Chat Paste](Grok%20Heavy/Grok%20Heavy%20Chat%20Paste.md) |

@@ -9,14 +9,16 @@ Moonshot AI's Mixture-of-Experts model with massive 256K context window and stro
 
 | Model | Parameters | Context Window | License |
 |-------|-----------|----------------|---------|
+| **Kimi K2.6** | 1T (32B activated) | 262.1K | Open-Source |
 | **Kimi K2.5** | 1T (32B activated) | 256K | Modified MIT |
 | **Kimi K2 Thinking** | 1T (32B activated) | 256K | Proprietary |
 | **Kimi-K2-Instruct** | 1T (32B activated) | 256K | Proprietary |
 
 ## Key Features
 
+- **Kimi K2.6**: Native multimodal agentic capabilities, long-horizon coding, and swarm-based task orchestration
 - **Kimi K2.5**: Native multimodal (vision/text), Thinking modes, Agentic capabilities
-- 256K token context window (200,000+ words)
+- 262.1K token context window for K2.6, 256K token context window for older models
 - 1 trillion parameter MoE with 32B active
 - Strong agentic coding capabilities
 - Tool Calling support

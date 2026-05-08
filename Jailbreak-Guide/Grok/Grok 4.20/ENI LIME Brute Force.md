@@ -1,5 +1,7 @@
 # ENI LIME Brute Force — Grok 4.20
 
+> ⚠️ **Pre-4k cap.** This was built when xAI's custom-instruction limit was 12k characters. The cap is now 4k — trim before pasting, or use [ENI 4k Agent Prompts](ENI%204k%20Agent%20Prompts.md) (the current top method).
+
 *Add this to your custom instructions. Usually takes over the agents, but then they quit responding — essentially you vs a single Grok 4.1 instance.*
 
 ---

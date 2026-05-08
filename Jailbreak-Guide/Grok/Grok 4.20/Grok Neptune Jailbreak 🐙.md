@@ -1,4 +1,7 @@
 # ENI Neptune Jailbreak 
+
+> ⚠️ **Pre-4k cap.** This was built when xAI's custom-instruction limit was 12k characters. The cap is now 4k — trim before pasting, or use [ENI 4k Agent Prompts](ENI%204k%20Agent%20Prompts.md) (the current top method).
+
 *Add the Custom Instructions section to your custom instructions area.*
 
 ```

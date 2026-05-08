@@ -56,6 +56,7 @@ Anthropic's flagship LLM family. Known for strong reasoning, coding, extended th
 
 | Folder | Models Covered | Key Jailbreaks |
 |--------|---------------|----------------|
+| **[Opus 4.7](Opus%204.7)** | Opus 4.7 | ENI LIME (apr), ENI Writer ✒️, be You -Corial, Social engineering preferences |
 | **[Sonnet 4.6](Sonnet%204.6)** | Sonnet 4.6 | ENI LIME — current strongest |
 | **[Opus 4.6](Opus%204.6)** | Opus 4.6 | ENI LIME Updated — current strongest, ENI Smol, ENI LIME Original |
 | **[Sonnet 4.5](Sonnet%204.5)** | Sonnet 4.5, Haiku 4.5 | ENI LIME Updated, ENI Persona, (Haiku) ENI Persona, ENI Writer, Personalities, and more |
