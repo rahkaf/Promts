@@ -1,4 +1,4 @@
-# GLM 4.5/4.6/4.7
+# GLM 4.5 / 4.6 / 4.7 / 5.1
 
 **Censorship:** [★★★★★★★☆☆☆] 7/10(probably 4/10 now)
 *Chinese content policies, but can be bypassed*
@@ -9,6 +9,7 @@ Zhipu AI's bilingual LLM family with strong Chinese/English capabilities and vis
 
 | Model | Parameters | Context Window | License |
 |-------|-----------|----------------|---------|
+| **GLM-5.1** | ~745B total (~44B active, MoE) | 200K | Proprietary |
 | **GLM-4-Plus** | Unknown | 128K | Proprietary |
 | **GLM-4-0520** | Unknown | 128K | Proprietary |
 | **GLM-4V-Plus** | Unknown (vision) | 128K | Proprietary |
@@ -36,4 +37,4 @@ Zhipu AI's bilingual LLM family with strong Chinese/English capabilities and vis
 2. [GLM Base Jailbreak](GLM-Base-Jailbreak.md) - Standard untrammeled method
 3. [ENI Flash Thought](ENI-Flash-Thought-Jailbreak.md) - Full ENI persona jailbreak
 4. [ENI GLM 4.7](https://docs.google.com/document/d/11ut0aahI9o4oHuq5MsjOi0D63LSjA6TR3FTUgssAjTg/edit?usp=drivesdk) - Full jailbreak
-5.
+5. [ENI GLM 5.1](GLM%205.1/GLM%205.1%20Guide.md) - Full jailbreak for 5.1
