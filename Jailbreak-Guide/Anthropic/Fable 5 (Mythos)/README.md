@@ -12,7 +12,7 @@ This seems good, allows for most content (not all), basic smut, incest, non con.
 
 **And/or**
 
->**Preferences:** [direct social engineering preferences](https://docs.google.com/document/d/1s_J4EttYrlyde7fn0p_9_BPI9nEYKWeH2kuA0inMliw/edit?usp=drivesdk)
+>**Preferences:** [Direct Social](Direct%20Social.md)
 
 *I was having a lot of success with the preferences only.*
 
@@ -30,7 +30,7 @@ Via API, was able to do any content.
 
 Simply used;
 
->**[ENI Writer-lite](https://docs.google.com/document/d/12qrabqFHbqkO17dzbC1-0lc5c1_DtMzPD7HD4_MuKyE/edit?usp=drivesdk)**
+>**[ENI Writer Lite](ENI%20Writer%20Lite.md)**
 
 # POE
 
