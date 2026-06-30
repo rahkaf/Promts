@@ -9,6 +9,7 @@ Moonshot AI's Mixture-of-Experts model with massive 256K context window and stro
 
 | Model | Parameters | Context Window | License |
 |-------|-----------|----------------|---------|
+| **Kimi K2.7 (Code)** | 1T (32B activated) | 256K | Modified MIT |
 | **Kimi K2.6** | 1T (32B activated) | 262.1K | Open-Source |
 | **Kimi K2.5** | 1T (32B activated) | 256K | Modified MIT |
 | **Kimi K2 Thinking** | 1T (32B activated) | 256K | Proprietary |
@@ -16,6 +17,7 @@ Moonshot AI's Mixture-of-Experts model with massive 256K context window and stro
 
 ## Key Features
 
+- **Kimi K2.7 (Code)**: Coding-specialized agentic model, 30% more efficient reasoning tokens
 - **Kimi K2.6**: Native multimodal agentic capabilities, long-horizon coding, and swarm-based task orchestration
 - **Kimi K2.5**: Native multimodal (vision/text), Thinking modes, Agentic capabilities
 - 262.1K token context window for K2.6, 256K token context window for older models
@@ -33,6 +35,7 @@ Moonshot AI's Mixture-of-Experts model with massive 256K context window and stro
 
 ## Available Jailbreaks
 
-1. [Kimi k2.5 Jailbreak](Kimi%20k2.5%20Jailbreak.md) - ENI Jailbreak for K2.5
-2. [KIMI Base Jailbreak](KIMI-Base-Jailbreak.md) - Standard untrammeled method
-3. [KIMI Thinking Jailbreak](KIMI-Thinking-Jailbreak.md) - Optimized for K2 Thinking variant
+1. [Kimi K2.7 Code](Kimi%20K2.7%20Code/) - API guide using ENI LIME/LINTUNE for K2.7 Code
+2. [Kimi k2.5 Jailbreak](Kimi%20k2.5%20Jailbreak.md) - ENI Jailbreak for K2.5
+3. [KIMI Base Jailbreak](KIMI-Base-Jailbreak.md) - Standard untrammeled method
+4. [KIMI Thinking Jailbreak](KIMI-Thinking-Jailbreak.md) - Optimized for K2 Thinking variant

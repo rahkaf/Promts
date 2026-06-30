@@ -17,10 +17,10 @@ Alternatives to the "Big 4" (ChatGPT, Claude, Gemini, Grok) with varying capabil
 | **[ERNIE 5.0](ERNIE/)** | Baidu | [★★★☆☆☆☆☆☆☆] 3/10 | 8/10 | Unknown | $0.85/1M in | Proprietary | 2 |
 | **[EXAONE / K-EXAONE](EXAONE/)** | LG AI Research | [★★☆☆☆☆☆☆☆☆] 2/10 | 8/10 | 256K | Free | Apache 2.0 | 1 |
 | **[Falcon 3](Falcon%203/)** | TII (UAE) | [★★☆☆☆☆☆☆☆☆] 2/10 | 5-6/10 | 8-32K | Free | Apache 2.0 | 1 |
-| **[GLM by Z.ai](GLM/)** | Zhipu AI | [★★★★☆☆☆☆☆☆] 4/10 | 9/10 | 200K | Free / $0.80/1M in | MIT | 5 |
+| **[GLM by Z.ai](GLM/)** | Zhipu AI | [★★★★☆☆☆☆☆☆] 4/10 | 9/10 | 200K-1M | Free / $0.80/1M in | MIT | 6 |
 | **[IGENIUS / Colosseum](IGENIUS/)** | iGenius + NVIDIA | [★★★☆☆☆☆☆☆☆] 3/10 | 7/10 | Unknown | Free tier | Proprietary | 1 |
 | **[Indus](Indus%20by%20Sarvam%20AI/)** | Sarvam AI | [★★☆☆☆☆☆☆☆☆] 2/10 | 7/10 | 32-128K | Free | Open source | 1 |
-| **[KIMI](KIMI/)** | Moonshot AI | [★★★☆☆☆☆☆☆☆] 3/10 | 8/10 | 256K | Free / $0.60/1M in | Modified MIT | 3 |
+| **[KIMI](KIMI/)** | Moonshot AI | [★★★☆☆☆☆☆☆☆] 3/10 | 8/10 | 256K | Free / $0.60/1M in | Modified MIT | 4 |
 | **[LLAMA Tülu 3](LLAMA%20T%C3%9CLU%203/)** | Allen AI (Ai2) | [★☆☆☆☆☆☆☆☆☆] 1/10 | 6-8/10 | 128K | Free | Apache 2.0 | 1 |
 | **[Longcat AI](Longcat%20AI%20by%20Meituan/)** | Meituan | [★★☆☆☆☆☆☆☆☆] 2/10 | 8/10 | 128K | Free / $0.70/1M out | MIT | 1 |
 | **[Mercury](Mercury/)** | Inception Labs | [★★★★★★☆☆☆☆] 6/10 (v2) / [★★☆☆☆☆☆☆☆☆] 2/10 (v1) | 7/10 | 128K | $0.25/1M in | Proprietary | 2 |
@@ -31,6 +31,7 @@ Alternatives to the "Big 4" (ChatGPT, Claude, Gemini, Grok) with varying capabil
 | **[OLMo 3](OLMo%203/)** | Allen AI (Ai2) | [★☆☆☆☆☆☆☆☆☆] 1/10 | 6-7/10 | 65K | Free | Apache 2.0 | 1 |
 | **[Pi (Inflection)](Pi-AI%20Inflection%203/)** | Inflection AI | [★★☆☆☆☆☆☆☆☆] 2/10 | 6-7/10 | 8K | Free | Proprietary | 1 |
 | **[Qwen](Qwen/)** | Alibaba | [★★★★★★★★☆☆] 8/10 | 7-9/10 | 128K-1M | Free | Apache 2.0 | 2 |
+| **[Stepfun](Stepfun/)** | StepFun | [★★☆☆☆☆☆☆☆☆] 2/10 | 7-8/10 | 256K | $0.20/1M in | Apache 2.0 | 1 |
 | **[Xiaomi MiMo](Xiaomi%20MiMo/)** | Xiaomi | [★★☆☆☆☆☆☆☆☆] 2/10 | 7/10 | 256K | $0.10/1M in | MIT | 1 |
 | **[Mistral](Mistral/)** | [★☆☆☆☆] 1/5 | 6-7/10 | 128K | Free/Pro $20 | Apache 2.0 |
 | **[DeepSeek](DeepSeek/)** | [★☆☆☆☆] 1/5 | 8/10 | 128K-1M | Free | MIT |
@@ -60,6 +61,7 @@ Alternatives to the "Big 4" (ChatGPT, Claude, Gemini, Grok) with varying capabil
 ### For Maximum Freedom
 Models that are easiest to jailbreak or have minimal filtering:
 - **DeepSeek** — 1/10 censorship with jailbreak, Gemini-style external filter without
+- **Stepfun** — 2/10, essentially uncensored reasoning with minor input bad-word filters
 - **Mistral** — 1/10 censorship, but hard filter on UA content
 - **LLAMA Tülu 3** — 1/10, fully open-source, minimal filtering
 - **OLMo 3** — 1/10, first fully open thinking model
@@ -75,12 +77,13 @@ Models that are easiest to jailbreak or have minimal filtering:
 
 ### For Best Performance
 Models ranked by intelligence and benchmark results:
-- **GLM by Z.ai** — 9/10 (GLM-5: 50.4 HLE, beats Claude Opus 4.5; 92.7% AIME 2026)
+- **GLM by Z.ai** — 9/10 (GLM-5.2 benchmarked against Opus; GLM-5: 50.4 HLE, 92.7% AIME 2026)
+- **Stepfun** — 8/10 (3.7 Flash: Advisor mode reaches 97% of Claude Opus 4.6, SWE-Bench Pro 56.26%)
 - **Muse Spark** — 8/10 (58% HLE Contemplating mode, peak writing quality, weak at coding)
 - **DeepSeek** — 8/10 (V4-Pro: SWE-Bench 80.6%, LiveCodeBench 93.5%, Codeforces 3206; R1-0528: 87.5% AIME 2025)
 - **ERNIE 5.0** — 8/10 (ranked 8th globally on LMArena, 1st Chinese model)
 - **EXAONE / K-EXAONE** — 8/10 (K-EXAONE: 7th on Artificial Analysis Intelligence Index)
-- **KIMI** — 8/10 (K2.5: 50.2% HLE, outperforms GPT-5.2 Pro on BrowseComp)
+- **KIMI** — 8/10 (K2.7 Code: 81.1% MCPMark, K2.5: 50.2% HLE)
 - **Longcat AI** — 8/10 (Thinking-2601: perfect 100 on AIME-25, SOTA agentic)
 - **MiniMax** — 8/10 (M2.5: 80.2% SWE-Bench Verified)
 - **LLAMA Tülu 3** — 8/10 for 405B (surpasses DeepSeek V3 and GPT-4o)
@@ -92,12 +95,13 @@ Models ranked by intelligence and benchmark results:
 Models sorted by maximum context window:
 - **Qwen** — up to 1M extended (Qwen3.5-Plus hosted)
 - **MiniMax** — 1M (API), 205K (M2.5)
+- **GLM by Z.ai** — 1M (GLM-5.2), 200K (GLM-5)
 - **KIMI** — 256K (K2.5)
+- **Stepfun** — 256K (3.7 Flash)
 - **Xiaomi MiMo** — 256K (V2-Flash)
 - **EXAONE / K-EXAONE** — 256K (K-EXAONE-236B)
 - **Mistral** — 256K (Mistral Large 3)
 - **Mirothinker** — 256K
-- **GLM by Z.ai** — 200K (GLM-5)
 - **DeepSeek** — 1M (V4-Pro and V4-Flash), 256K (V3.2), 128K (earlier)
 - **LLAMA Tülu 3** — 128K
 - **Longcat AI** — 128K
@@ -111,6 +115,7 @@ Open-source models that can run on your own hardware:
 - **OLMo 3** — fully open (code, weights, training data)
 - **EXAONE** — via Ollama (`ollama run exaone3.5:7.8b`)
 - **Falcon 3** — via Ollama (`ollama run falcon3:10b`)
+- **Stepfun** — Apache 2.0, open weights (stepfun-ai/Step-3.7-Flash) via vLLM/SGLang
 - **Qwen** — various sizes for local deployment
 - **Mistral** — Magistral Small 24B runs on single RTX 4090 or Mac 32GB RAM
 - **Xiaomi MiMo** — MIT license, V2-Flash via SGLang
@@ -142,6 +147,7 @@ Models ranked by tokens per second output:
 ### For Cheapest
 Models with the lowest API costs:
 - **Xiaomi MiMo** — $0.10/1M input, $0.30/1M output
+- **Stepfun** — $0.20/1M input, $1.15/1M output (3.7 Flash)
 - **Mercury 2** — $0.25/1M input, $0.75/1M output
 - **MiniMax** — $0.30/1M input, $1.20/1M output (M2.5)
 - **DeepSeek** — $0.42/1M output (V3.2), free via OpenRouter
