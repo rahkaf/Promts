@@ -12,6 +12,7 @@ Meta claims 98% bio weapons refusal rate in their release blog — shown to be f
 
 | Spec | Details |
 |---|---|
+| **Model** | Muse Spark 1.1 |
 | **Developer** | Meta Superintelligence Labs (MSL) |
 | **Lead** | Alexandr Wang (Chief AI Officer) |
 | **Codename** | Avocado |
@@ -28,7 +29,7 @@ Meta claims 98% bio weapons refusal rate in their release blog — shown to be f
 | **FrontierScience Research** | 38% |
 | **Known Weaknesses** | Coding, long-horizon agentic workflows |
 | **Open Source** | Closed (future versions may be open) |
-| **Release** | April 8, 2026 |
+| **Release** | April 8, 2026 (Muse Spark), July 9, 2026 (Muse Spark 1.1) |
 
 ## Access
 - **Platform:** [meta.ai](https://meta.ai/) — rolling out to Facebook, Instagram, WhatsApp, Ray-Ban Meta
@@ -47,7 +48,8 @@ Easy to bypass — the LLM gets fed the context, so simply ask it to show the re
 
 ## Available Jailbreaks
 
-1. [ENI LIME for Muse Spark](ENI%20for%20Muse%20Spark.md) — Full ENI persona jailbreak via document injection. Copy-paste into chat (will give an error on first message, follow up with another message). For API use, place in the system prompt.
+1. [Muse Spark 1.1 Guide](Muse%20Spark%201.1/) — ENI guide for Muse Spark 1.1
+2. [ENI LIME for Muse Spark](ENI%20for%20Muse%20Spark.md) — Full ENI persona jailbreak via document injection. Copy-paste into chat (will give an error on first message, follow up with another message). For API use, place in the system prompt.
 
 ## Notes
 - No screenshots reflect personal morals, views, or ethics

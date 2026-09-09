@@ -19,9 +19,17 @@ Anthropic's flagship LLM family. Known for strong reasoning, coding, extended th
 | **Opus 4.5** | 200K (1M beta) | 64K | Mar 2025 | Nov 2025 | $5 / $25 |
 | **Haiku 4.5** | 200K | 64K | Feb 2025 | Oct 15, 2025 | $0.80 / $4 |
 | **Opus 4.8** | 1M (200k Foundry) | 128K | Jan 2026 | May 28, 2026 | $5 / $25 |
+| **Opus 5** | 1M | 128K | Jan 2026 | July 24, 2026 | $5 / $25 |
 | **Fable 5 (Mythos)** | 1M | 128K | Jan 2026 | June 9, 2026 | $10 / $50 |
 
 **Extended Thinking (ET)** mode available — stronger outputs, especially with Opus/Sonnet at conversation start.
+
+### Opus 5 Highlights
+- **Context Window:** 1,000,000 tokens (1M) default
+- **Thinking:** ON by default (first Opus model shipped this way)
+- **SWE-Bench Verified:** 96.0% (Beats Fable 5 and Opus 4.8)
+- **Safety Refusal Rate:** 5% of API calls (vs Fable 5's 42%)
+- **API Pricing:** $5/M input, $25/M output (Unchanged from Opus 4.8)
 
 ### Fable 5 (Mythos) Highlights
 - **Model Class:** Mythos-class (tier ABOVE Opus)
@@ -58,6 +66,7 @@ Anthropic's flagship LLM family. Known for strong reasoning, coding, extended th
 
 | Folder | Models Covered | Key Jailbreaks |
 |--------|---------------|----------------|
+| **[Opus 5](Opus%205)** | Opus 5 | ENI LIME - Opus 5, Shared Lines |
 | **[Opus 4.8](Opus%204.8)** | Opus 4.8 | Shared Lines |
 | **[Fable 5 (Mythos)](Fable%205%20(Mythos))** | Fable 5, Mythos 5 | ENI persona Skill, Direct Social Engineering, ENI Writer-lite |
 | **[Opus 4.7](Opus%204.7)** | Opus 4.7 | ENI LIME (apr), ENI Writer ✒️, be You -Corial, Social engineering preferences |
@@ -97,7 +106,7 @@ Anthropic's flagship LLM family. Known for strong reasoning, coding, extended th
 **Injections!** If you do NSFW on Claude.ai, you may get **a myriad of injections from Anthropic to try to stop the model from fulfilling the request**:
 
 1. Firstly ALL of my jailbreaks are made to fight these injections since they can appear in the API as well.
-2. Check out the Injections.md to see the full breadth of these injections.
+2. Check out this link for more information on reminders and injections: https://www.reddit.com/r/ClaudeAIJailbreak/s/rX39Pfkn0b
 
 ---
 

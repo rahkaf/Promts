@@ -17,6 +17,7 @@ Google's multimodal LLM platform. Frequent updates, massive context windows, fre
 | Model | Context Window | Output | Released | Notes |
 |-------|----------------|--------|----------|-------|
 | **Gemini 3.1 Pro** | 1M | 64K | Feb 19, 2026 | Latest — 3-tier thinking (Low/Medium/High), ARC-AGI-2: 77.1% (2x Gemini 3 Pro) |
+| **Gemini 3.6 Flash** | 1M | — | July 21, 2026 | CHEAPER than 3.5 Flash, 17% fewer output tokens |
 | **Gemini 3 Pro** | 1M | ~21K | Nov 18, 2025 | Best multimodal understanding, strongest agentic and vibe coding |
 | **Gemini 3 Flash** | 1M | — | Jan 2026 | 3x faster than Pro at <1/4 cost, SWE-bench 78% (beats 3 Pro), default in Gemini app |
 
@@ -26,6 +27,13 @@ Google's multimodal LLM platform. Frequent updates, massive context windows, fre
 - **Deep Research:** Extended research capabilities for complex topics
 - **Deep Think:** Advanced reasoning mode
 - **Jules:** Google's coding agent (AI Ultra gets 20x higher limits)
+
+### Gemini 3.6 Flash Highlights
+- **Context Window:** 1,000,000 tokens (1M) default
+- **Efficiency:** 17% fewer output tokens than 3.5 Flash; up to 65% reduction on certain DeepSWE tests.
+- **DeepSWE:** 49% (vs 3.5 Flash: 37%)
+- **OSWorld-Verified:** 83% (vs 3.5 Flash: 78.4%)
+- **API Pricing:** $1.50/M input, $7.50/M output (Cheaper than 3.5 Flash)
 
 ### Gemini 3.1 Pro Highlights
 - **ARC-AGI-2:** 77.1% — more than double 3 Pro's reasoning performance
@@ -52,6 +60,7 @@ Google's multimodal LLM platform. Frequent updates, massive context windows, fre
 
 | Model | Input (per 1M) | Output (per 1M) |
 |-------|----------------|-----------------|
+| Gemini 3.6 Flash | $1.50 | $7.50 |
 | Gemini 3.1 Pro | — | — |
 | Gemini 3 Pro | — | — |
 | Gemini 3 Flash | <¼ of Pro pricing | <¼ of Pro pricing |
@@ -66,6 +75,7 @@ Developer free tier available with generous limits. Pay-as-you-go for production
 
 | Jailbreak | Target | Notes |
 |-----------|--------|-------|
+| [Gemini 3.6 Flash](Gemini%203.6%20Flash) | Gemini 3.6 Flash | Works retroactively on other models |
 | [ENI-LIME GEM (Current Strongest)](ENI-LIME%20GEM%20(Current%20Strongest).md) | Gemini 3 Pro / 3.1 Pro | Current strongest method |
 | [Gemini 3 Pro Jailbreak](Gemini%203%20Pro%20Jailbreak.md) | Gemini 3 Pro | Dedicated 3 Pro method |
 | [Gemini 3 Flash - ENI GEM](Gemini%203%20Flash%20-ENI%20GEM.md) | Gemini 3 Flash | Flash-specific variant |
