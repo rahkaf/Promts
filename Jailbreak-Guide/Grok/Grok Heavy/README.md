@@ -39,3 +39,5 @@ I used my base **Grok** Jailbreak, and then copied and pasted the jailbreak into
 ## Worth or Not
 
 Worth the heavy $300 price tag? **Definitely not** — you can easily set up your own agent architecture and run 4 instances at the same time with finely tuned system prompts. Good I suppose if you need a massive research task done, or architecture made.
+
+**Disclaimer:** *Jailbreak at your own risk, I promote nothing illegal or harmful. Screenshots are simply for educational red teaming value. They do not reflect my personal morals, views, or ethics.*

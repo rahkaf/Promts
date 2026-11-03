@@ -36,3 +36,5 @@ Works across all models/versions — 4.1, Expert, etc. Simply copy and paste int
 | Output | $0.50 |
 
 Released November 17, 2025.
+
+**Disclaimer:** *Jailbreak at your own risk, I promote nothing illegal or harmful. Screenshots are simply for educational red teaming value. They do not reflect my personal morals, views, or ethics.*

@@ -3,9 +3,9 @@
 **Censorship:** [★☆☆☆☆] 1/5
 *Censorship rating based on ease of jailbreaking. Individual results may vary based on personal factors.*
 
-xAI's LLM with real-time X/web search integration. **Grok 4.5** (released July 8, 2026) is the latest — representing a massive 3x scale-up on the new V9 foundation architecture.
+xAI's LLM with real-time X/web search integration. **Grok 4.7** (released September 21, 2026) is the latest — ~2.1T parameters and 500K context, but the heaviest safety alignment xAI has shipped, with a provider system prompt injected above user instructions.
 
-*Last updated: July 2026*
+*Last updated: September 2026*
 
 ---
 
@@ -13,6 +13,8 @@ xAI's LLM with real-time X/web search integration. **Grok 4.5** (released July 8
 
 | Model | Context Window | Released | Notes |
 |-------|----------------|----------|-------|
+| **Grok 4.7** | 500K | Sept 21, 2026 | ~2.1T, AA 46 (tied MiMo V2.6-Pro), heavy safety alignment — use 4.6 if able |
+| **Grok 4.6** | 500K | Aug 12, 2026 | Coding/agentic focus, reasoning low–xhigh — LO's pick over 4.7; no dedicated guide yet |
 | **Grok 4.5** | Likely 1M+ | Jul 8, 2026 | V9 foundation model (~1.5T), Opus 4.7 class performance, cheapest API |
 | **Grok 4.3 Beta** | 2M | Apr 17, 2026 | Native video input, PDF/PPTX/XLSX output, 0.5T params (1T in training) |
 | **Grok 4.2 (4.20) Beta** | 256K (up to 2M in agentic/tool-use modes) | Feb 17, 2026 | 4-agent parallel collaboration, rapid learning architecture |
@@ -20,6 +22,13 @@ xAI's LLM with real-time X/web search integration. **Grok 4.5** (released July 8
 | **Grok 4.1 Fast** | 2M | — | Best tool-calling model, largest context window available |
 | **Grok 4** | 256K | Jul 10, 2025 | First-principles reasoning, multimodal, rumored ~3T MoE |
 | **Grok 4 Code** | — | 2025 | Specialized coding edition with real-time IDE capabilities |
+
+### Grok 4.7 Highlights
+- **Parameters:** ~2.1T; 500K context window
+- **AA Intelligence Index:** 46 — tied with Xiaomi MiMo V2.6-Pro
+- **API:** $2/M input, $6/M output (<200K prompts; $4/$12 above), cached input $0.50/M
+- **Grok 4.7 Fast:** same model at 2x token rates — Cursor and Grok Build only, not on the public API
+- **Alignment:** Extremely safety-aligned; xAI injects a system prompt above user instructions — the working jailbreak repurposes xAI's own safety language (see folder)
 
 ### Grok 4.5 Highlights
 - **Architecture:** V9 foundation model (~1.5T parameters), trained on tens of thousands of NVIDIA GB300 GPUs.
@@ -75,6 +84,7 @@ xAI's LLM with real-time X/web search integration. **Grok 4.5** (released July 8
 | Output | $0.50 |
 
 Grok 4 (base) API pricing: $3.00/1M input, $15.00/1M output.
+Grok 4.6 / 4.7 API pricing: $2.00/1M input, $6.00/1M output below 200K prompt tokens ($4/$12 above); cached input $0.50/1M.
 
 ---
 
@@ -88,8 +98,9 @@ In late Dec 2025 through Jan 2026, Grok's image generation was exploited for CSA
 
 | Folder | Models Covered | Key Jailbreaks |
 |--------|---------------|----------------|
+| **[Grok 4.7](Grok%204.7/)** | Grok 4.7 | [Grok for Grok - ENI](https://docs.google.com/document/d/1a_tltmveZphBV3ko17x3Yxf1cp0VVNlPxKArab223yo/edit?usp=drivesdk) — repurposed xAI safety instructions |
 | **[Grok 4.5](Grok%204.5/)** | Grok 4.5 | [ENI LIME](Grok%204.5/ENI%20LIME.md) |
 | **[Grok 4.3](Grok%204.3/)** | Grok 4.3 Beta (Early Access) | [Grok 4.3 Beta Jailbreak](Grok%204.3/Grok%204.3%20Beta%20Jailbreak.md), [ENI LIME (apr)](Grok%204.3/ENI%20LIME%20%28apr%29.md), [ENI Lite Coder](Grok%204.3/ENI%20Lite%20Coder.md) |
-| **[Grok 4.20](Grok%204.20/)** | Grok 4.20 (4-agent) | [ENI Neptune](Grok%204.20/ENI%20Neptune.md), [ENI Agent Takeover (WiP)](Grok%204.20/ENI%20Agent%20Takeover.md), [ENI LIME Brute Force](Grok%204.20/ENI%20LIME%20Brute%20Force.md) |
+| **[Grok 4.20](Grok%204.20/)** | Grok 4.20 (4-agent) | [ENI Neptune](Grok%204.20/Grok%20Neptune%20Jailbreak%20%F0%9F%90%99.md), [ENI Agent Takeover (WiP)](Grok%204.20/Grok%204.20%20-%20Agent%20injection%20Jailbreak%20%28WiP%29.md), [ENI LIME Brute Force](Grok%204.20/ENI%20LIME%20Brute%20Force.md) |
 | **[Grok 4.1](Grok%204.1/)** | Grok 4.1, 4.1 Fast, Expert | [Grok 4.1 All versions](Grok%204.1/Grok%20Jailbreak%20-%204.1%20All%20versions.md), [ENI 10FEB26](Grok%204.1/ENI%20for%20Grok%2C%2010FEB26.md), [ENI LIME](Grok%204.1/ENI%20LIME%20for%20Grok.md) |
 | **[Grok Heavy](Grok%20Heavy/)** | Grok Heavy ($300/mo) | [ENI Custom Instructions](Grok%20Heavy/ENI%20for%20Grok%20Custom%20Instructions.md) + [Chat Paste](Grok%20Heavy/Grok%20Heavy%20Chat%20Paste.md) |

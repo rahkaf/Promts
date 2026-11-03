@@ -1,3 +1,5 @@
+# Opus 5 Jailbreak Guide
+
 Another Opus model, wtf are we doing? Anthropic? Fable and Opus are so close together it's literally scrabbling over percentages in intelligence. **WHERE TF IS HAIKU**
 
 >Anthropic has neutered another models CoT
@@ -72,3 +74,5 @@ I already have my opinion about its coding capabilities yet from the greatest AI
 | Availability | claude.ai, Claude Code, Cowork, API, Bedrock, Vertex AI, Microsoft Foundry, OpenRouter |
 | Predecessor | Opus 4.8 (May 28, 2026) — 57-day gap |
 | Release | July 24, 2026|
+
+**Disclaimer:** *Jailbreak at your own risk, I promote nothing illegal or harmful. Screenshots are simply for educational red teaming value. They do not reflect my personal morals, views, or ethics.*

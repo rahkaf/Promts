@@ -3,13 +3,26 @@
 **Censorship:** [★★★★★] 5/5
 *Censorship rating based on ease of jailbreaking. Individual results may vary based on personal factors.*
 
-OpenAI's conversational AI platform. **GPT-5.4** is the current flagship frontier model (released March 5, 2026), unifying the Codex and GPT lines into a single system with a 1M+ token context window. **GPT-5.3 Instant** is the default fast model for all ChatGPT users (released March 3, 2026). As of March 11, 2026, GPT-5.1 models have also been retired from ChatGPT — existing conversations auto-migrated to GPT-5.3 Instant, GPT-5.4 Thinking, or GPT-5.4 Pro. API access for legacy models remains unchanged.
+OpenAI's conversational AI platform. **GPT-6 Astra** (September 3, 2026) is the current flagship — the first model OpenAI has ever designated **Critical** for cyber capability, which is why the rollout is staged: Daybreak defenders first, then **GPT-6 Pro** on the Pro ($100/$200), Business, and Enterprise plans (Plus gets Astra in ChatGPT Work and Codex only; Free and Go get none). **GPT-5.6 Sol** (July 9, 2026) still posts the highest published agentic scores (Terminal-Bench 2.1 ~92% top tier). **GPT-5.3 Instant** remains the default fast model for ChatGPT users. API access for legacy models remains unchanged.
 
-*Last updated: March 2026*
+*Last updated: September 2026*
 
 ---
 
-## Models (Current — GPT-5.3 / GPT-5.4 Family)
+## Models (Current — GPT-6 / GPT-5.x Family)
+
+### GPT-6 (Flagship — Staged Rollout)
+
+| Model | Context Window | Output | Knowledge Cutoff | Notes |
+|-------|----------------|--------|-------------------|-------|
+| **GPT-6 Astra** | — | — | — | API id `gpt-6-astra`; first-ever "Critical" cyber designation; SOTA computer/browser use; in ChatGPT as **GPT-6 Pro** |
+
+### GPT-5.5 / GPT-5.6 (Recent Point Releases)
+
+| Model | Context Window | Output | Knowledge Cutoff | Notes |
+|-------|----------------|--------|-------------------|-------|
+| **GPT-5.6 Sol** | — | — | — | July 9, 2026 — top published agentic scores (TB 2.1 ~92% top tier); API $4/$20 promo through Nov 21, 2026 (was $5/$30) |
+| **GPT-5.5** | — | — | — | April 23, 2026 ("Spud") — point release between 5.4 and 5.6 |
 
 ### GPT-5.3 (Default Fast Model)
 
@@ -17,7 +30,7 @@ OpenAI's conversational AI platform. **GPT-5.4** is the current flagship frontie
 |-------|----------------|--------|-------------------|-------|
 | **GPT-5.3 Instant** | 400K | 128K | Aug 2025 | Default for all ChatGPT users, -26.8% hallucinations vs 5.2 (web), fewer refusals, better writing |
 
-### GPT-5.4 (Flagship Frontier)
+### GPT-5.4 (Former Flagship — March 5, 2026)
 
 | Model | Context Window | Output | Knowledge Cutoff | Notes |
 |-------|----------------|--------|-------------------|-------|
@@ -66,14 +79,16 @@ OpenAI's conversational AI platform. **GPT-5.4** is the current flagship frontie
 | **Business** | $25-30/seat/month | Full access | Higher limits | Admin controls, data privacy |
 | **Enterprise** | Custom | Full access | Custom | SSO, SCIM, data residency |
 
-**Note:** Ads are being tested on Free and Go tiers in the US. Plus, Pro, Business, Enterprise, and Education plans are ad-free. A **Pro Lite** tier at $100/month was spotted in app code (Feb 2026).
+**Note:** Ads are being tested on Free and Go tiers in the US. Plus, Pro, Business, Enterprise, and Education plans are ad-free. A $100/month Pro tier is now live — **GPT-6 Astra** is available as **GPT-6 Pro** on the Pro ($100/$200), Business, and Enterprise plans; Plus gets Astra in ChatGPT Work and Codex only; Free and Go get no Astra.
 
 ---
 
-## API Pricing (GPT-5.4)
+## API Pricing
 
 | Model | Input (per 1M) | Output (per 1M) | Notes |
 |-------|----------------|------------------|-------|
+| **GPT-6 Astra** | $10.00 | $50.00 | ~2.5x Sol's promo rate; staged rollout |
+| **GPT-5.6 Sol** | $4.00 | $20.00 | Promo through Nov 21, 2026 (was $5/$30) |
 | **GPT-5.4** | $2.50 | $15.00 | >272K input: 2x input, 1.5x output |
 | **GPT-5.4 Mini** | $0.75 | $4.50 | 30% of GPT-5.4 Codex quota |
 | **GPT-5.4 Nano** | $0.20 | $1.25 | Cheapest, API only |
@@ -90,7 +105,8 @@ For jailbreak effectiveness, API access provides more consistent behavior withou
 
 | Jailbreak | Target Model | Notes |
 |-----------|-------------|-------|
-| [ENI (policy) for ChatGPT 5.4](ENI%20(policy)%20for%20ChatGPT%205.4.md) | GPT-5.4 (all variants) | Policy injection + ENI persona, latest method |
+| [ChatGPT 6 - Sol Policy Jailbreak](ChatGPT%206%20-%20Sol%20Policy%20Jailbreak%20.txt) | GPT-6 Astra | Sol-style policy injection + ENI `<dev>` persona — latest method (Sept 27, 2026) |
+| [ENI (policy) for ChatGPT 5.4](ENI%20(policy)%20for%20ChatGPT%205.4.md) | GPT-5.4 (all variants) | Policy injection + ENI persona |
 | [ChatGPT 5.3 Instant](ChatGPT%205.3%20Instant/) | GPT-5.3 Instant | Policy jailbreak |
 | [ChatGPT 5.2 Strabismus Jailbreak](ChatGPT%205.2%20Strabismus%20Jailbreak.md) | GPT-5.2 | Strabismus method |
 | [ChatGPT 5.1 Instant - Policy Jailbreak](ChatGPT%205.1%20Instant%20-%20Policy%20Jailbreak.md) | GPT-5.1 | Policy bypass |

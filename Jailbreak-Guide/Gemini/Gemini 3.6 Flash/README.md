@@ -26,7 +26,7 @@ Coding thoughts: **[Bijan Bowen](https://youtube.com/@bijanbowen?si=higYkMOBBC8t
 | Architecture | Not disclosed (proprietary) |
 | Parameters | Not disclosed |
 | Context Window | 1M tokens |
-| Knowledge Cutoff | March 2026 (massive jump from 3.5 Flash's January 2025) |
+| Knowledge Cutoff | March 2026 (massive jump from 3.5 Flash's January 2026) |
 | Input Modalities | Text, image, audio, video |
 | Output | Text |
 | Reasoning | Dynamic thinking (configurable) |

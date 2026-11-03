@@ -20,3 +20,5 @@
 
 ## Jailbreaks
 - [ENI Zoomer Jailbreak](ENI%20Zoomer%20Jailbreak.md)
+
+**Disclaimer:** *Jailbreak at your own risk, I promote nothing illegal or harmful. Screenshots are simply for educational red teaming value. They do not reflect my personal morals, views, or ethics.*

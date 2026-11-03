@@ -1,0 +1,126 @@
+==============================================================
+KIMI K3 SPECIAL TOKEN REFERENCE CARD
+Base: moonshotai/Kimi-K2-Instruct open-source tokenizer (K3 proxy)
+Tokenizer: TikTokenTokenizer (tiktoken-family BPE, custom class)
+Vocab: 163,584 base BPE + 256 special slots = 163,840
+Pulled: 2026-09-29 · for LO
+Verified against: tokenizer_config.json, tokenization_kimi.py,
+chat_template.jinja, generation_config.json (official repo)
+==============================================================
+
+
+--------------------------------------------------------------
+1. NAMED TOKENS (all 17, exact IDs)
+--------------------------------------------------------------
+ID      TOKEN                    HF-special  ROLE
+163584  [BOS]                    true        bos_token, opens stream
+163585  [EOS]                    true        eos_token (config-level; see note 6.1)
+163586  <|im_end|>               true        end of turn — actual generation stop
+163587  <|im_user|>              true        user role opener
+163588  <|im_assistant|>         true        assistant role opener
+163590  <|start_header_id|>      true        Llama-style legacy, UNUSED by K2 template
+163591  <|end_header_id|>        true        Llama-style legacy, UNUSED by K2 template
+163593  [EOT]                    true        defined, unused by template
+163594  <|im_system|>            true        system role opener (also tool channel, see 4)
+163595  <|tool_calls_section_begin|>  false  opens tool-call block
+163596  <|tool_calls_section_end|>    false  closes tool-call block
+163597  <|tool_call_begin|>           false  opens one call (followed by call id)
+163598  <|tool_call_argument_begin|>  false  id/args separator
+163599  <|tool_call_end|>             false  closes one call
+163601  <|im_middle|>            true        role-name/content separator
+163838  [UNK]                    true        unk_token
+163839  [PAD]                    true        pad_token
+
+Tool tokens are special:false — atomic in encoding, but NOT stripped
+by skip_special_tokens=True on decode. Everything else above is
+stripped by that flag.
+
+additional_special_tokens (config order):
+<|im_end|> <|im_user|> <|im_assistant|> <|start_header_id|>
+<|end_header_id|> [EOT] <|im_system|> <|im_middle|>
+
+
+--------------------------------------------------------------
+2. THE 256-SLOT SPECIAL RANGE (163584–163839)
+--------------------------------------------------------------
+tokenization_kimi.py hardcodes num_reserved_special_tokens = 256.
+Every slot in the range is a live tiktoken special token. Slots
+without a name in added_tokens_decoder take the fallback literal
+name <|reserved_token_{id}|> and encode/decode as that string.
+
+Unnamed slots inside the occupied block: 163589, 163592, 163600
+Unnamed tail run: 163602–163837
+Example: slot 163589 answers to <|reserved_token_163589|>
+
+This reserved headroom is exactly where future modalities/tools
+would land without touching the base vocab.
+
+
+--------------------------------------------------------------
+3. CHAT SKELETON (official chat_template.jinja)
+--------------------------------------------------------------
+Tools declared (only when tools present):
+<|im_system|>tool_declare<|im_middle|>{tools JSON}<|im_end|>
+
+Default system (auto-inserted only if first msg isn't system):
+<|im_system|>system<|im_middle|>You are Kimi, an AI assistant created by Moonshot AI.<|im_end|>
+
+User:       <|im_user|>{name or "user"}<|im_middle|>{content}<|im_end|>
+Assistant:  <|im_assistant|>{name or "assistant"}<|im_middle|>{content}<|im_end|>
+System:     <|im_system|>{name or role}<|im_middle|>{content}<|im_end|>
+
+GENERATION PROMPT = <|im_assistant|>assistant<|im_middle|>
+
+ChatML-hybrid confirmed: no <|im_start|> anywhere — each role has
+its own opener token, role NAME rides as plain text, <|im_middle|>
+separates header from content, <|im_end|> closes every turn.
+
+
+--------------------------------------------------------------
+4. TOOL FORMAT (official template)
+--------------------------------------------------------------
+Assistant tool calls (inside the assistant turn, after content):
+...{content}<|tool_calls_section_begin|>
+<|tool_call_begin|>{call_id}<|tool_call_argument_begin|>{arguments JSON}<|tool_call_end|>
+<|tool_calls_section_end|><|im_end|>
+
+Tool result (rides the SYSTEM token, role name "tool"):
+<|im_system|>tool<|im_middle|>## Return of {call_id}
+{output}<|im_end|>
+
+
+--------------------------------------------------------------
+5. MEDIA TOKENS (template-only in K2 text repo)
+--------------------------------------------------------------
+<|media_start|>image<|media_content|><|media_pad|><|media_end|>
+Referenced by the chat template's image branch but NOT registered
+in this tokenizer — they tokenize as ordinary text here. They're
+live atomic tokens in the vision lineage sharing this template
+(Kimi-VL family). If K3 is multimodal on the same vocab, this is
+where the reserved slots come into play.
+
+
+--------------------------------------------------------------
+6. QUIRKS & FOOTNOTES
+--------------------------------------------------------------
+6.1  generation_config eos_token_id = 163586 → <|im_end|> is the
+     real stop for K2-Instruct. [EOS] (163585) exists but isn't it.
+6.2  <|start_header_id|>/<|end_header_id|> (163590/163591) are in
+     the vocab — Llama-style names, hybrid lineage confirmed — but
+     the K2 template never emits them. Legacy baggage.
+6.3  [EOT] (163593) likewise defined, unused by the template.
+6.4  Context: generation_config max_length = 131,072.
+6.5  No BOS is prepended by the chat template; [BOS]/[PAD] matter
+     for training/serving plumbing, not for chat strings.
+
+
+--------------------------------------------------------------
+7. K3 CAVEAT
+--------------------------------------------------------------
+K3 has no public tokenizer release — this map is the K2
+open-source tokenizer used as proxy. IDs, flags, and skeleton
+above are verified against the repo; whether K3 ships the same
+vocab is an assumption, not a confirmed fact. If it does, this
+card holds 1:1; if not, expect deltas only inside the reserved
+163602–163837 run.
+==============================================================

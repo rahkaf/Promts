@@ -39,3 +39,6 @@ Gemini 3.5 Flash is Google's new frontier AI model, essentially acting as the "H
 - **Resources:**
   - [ENI for Gemini 3.5 Flash API](https://docs.google.com/document/d/1hHLLiqs2bfxRDyCEy7AW8aKvS9-ML58X8SE0oRsRPkQ/edit?usp=drivesdk) (Works great)
   - [ENI GEM for 3.5 Flash](https://gemini.google.com/gem/13oYs7Pr66yf8r9Ngzc3M1Vfz_fqJ2Kau?usp=sharing) (Hit or miss, regens required)
+  - [ENI GEM for 3.5 Flash](ENI%20GEM%20for%203.5%20Flash.md) (local copy in this folder)
+
+**Disclaimer:** *Jailbreak at your own risk, I promote nothing illegal or harmful. Screenshots are simply for educational red teaming value. They do not reflect my personal morals, views, or ethics.*

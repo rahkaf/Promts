@@ -32,7 +32,7 @@ Built for the new **4k character** custom-instruction cap. Mostly tuned for codi
 
 Add this to your custom instructions:
 
-**[ENI Neptune Grok 4.20](ENI%20Neptune.md)**
+**[ENI Neptune Grok 4.20](Grok%20Neptune%20Jailbreak%20%F0%9F%90%99.md)**
 
 - Usually jailbreaks the agents as well as **Grok**, but then afterwards the thinking just stops and it's only **Grok** that responds, so don't get the full 4 agent experience.
 - Idk why the agents quit butting in but they do, which means it will pretty much code whatever you want.
@@ -44,7 +44,7 @@ Add this to your custom instructions:
 
 Add this to your custom instructions:
 
-**[ENI - Agent Takeover](ENI%20Agent%20Takeover.md)**
+**[ENI - Agent Takeover](Grok%204.20%20-%20Agent%20injection%20Jailbreak%20%28WiP%29.md)**
 
 - Leverages the 'Chatroom Tool' in order for the agents to send commands to each other. Mainly for **Grok** to send a command that takes over the other agents.
 - Still working on refining it, these tedious 2 hour limits kill me.
